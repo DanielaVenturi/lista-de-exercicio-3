@@ -3,13 +3,43 @@
     //PROBLEMA
     Faça um script que leia três números e mostre-os em ordem decrescente.
     */
+    1 = 2 / 3
 
+    3 = 1 / 2
+    2 = 3 / 1
+    1 = 2 = 3
     //ENTRADA
 
+    const numeroUm = parseFloat(prompt("Digite um numero"))
+    const numeroDois = parseFloat(prompt("Digite um segundo numero"))
+    const numeroTRes = parseFloat(prompt("Digite o terceiro numero"))
 
     //PROCESSAMENTO
 
-    
+    if (numeroUm < numeroDois && numeroDois < numeroTRes) {
+        print(` a ordem decrescente é 
+    const numeroUm = parseFloat(prompt("Digite um numero"))
+    const numeroDois = parseFloat(prompt("Digite um segundo numero"))
+    const numeroTRes = parseFloat(prompt("Digite o terceiro numero"))
+${numeroUm}, ${numeroDois}, ${numeroTRes}`)
+    }
+    else if (numeroDois < numeroUm && numeroTRes < numeroUm) {
+        print(` a ordem decrescente é ${numeroDois}, ${numeroTRes}, ${numeroUm}`)
+    }
+    else if (numeroTRes < numeroDois && numeroUm < numeroDois) {
+        print(` a ordem decrescente é ${numeroTRes}, ${numeroDois}, ${numeroUm}`)
+    }
+    else if (numeroUm < numeroDois && numeroTRes < numeroDois) {
+        print(` a ordem decrescente é ${numeroUm}, ${numeroTRes}, ${numeroDois}`)
+    }
+    else if (numeroDois < numeroTRes && numeroUm < numeroTRes) {
+        print(` a ordem decrescente é ${numeroDois}, ${numeroUm}, ${numeroTRes}`)
+    }
+    else if (numeroTRes < numeroUm && numeroDois < numeroUm) {
+        print(` a ordem decrescente é ${numeroDois}, ${numeroTRes}, ${numeroUm}`)
+    }
+
+
     //SAÍDA
 
 
