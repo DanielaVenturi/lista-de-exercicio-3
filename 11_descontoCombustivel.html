@@ -15,11 +15,28 @@
 
     //ENTRADA
 
+const tipoCombustivel = prompt("Digite o tipo de combustivel (A- alcol | G- gasolina):").toUpperCase()
+const litros = parseInt(prompt("digite a quantidade de litros de combustivel:"))
+   let precoFinal = 0
 
-    //PROCESSAMENTO
-
+//PROCESSAMENTO
     
+const precoAlcool = 6.1
+const precoGasolina = 6.5
+    
+if (tipoCombustivel === `A`) {
+    if(litros <= 20) precoFinal = precoAlcool * (97 / 100) * litros
+    else precoFinal * (95 / 100) * litros
+}
+else if (tipoCombustivel.toUpperCase()=== `G`){
+    if (litros <= 20 )precoFinal = precoGasolina * (96 / 100) * litros
+    else precoFinal = precoGasolina * (94 / 100) * litros
+}
+else{
+    document.write(`Tipo de combrustivel invalido`)
+}
+
     //SAÍDA
 
-
+document.write(`O valor a ser pago pelo cliente é de R$ ${precoFinal.toFixed(2)}`)
 </script>
